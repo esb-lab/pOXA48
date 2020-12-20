@@ -1,0 +1,45 @@
+[1] Output Directory:  ../runs/strains/C012_uniform_nclones20_TC/
+[1] Input Data file:  ../../../data/ODdata_strains/ODdata_C012_TC.csv
+[1] Number of iterations:  1e+06
+[1] Prior:  uniform
+[1] Number of clones:  20
+[1] *******************************
+
+Attaching package: ‘pracma’
+
+The following object is masked from ‘package:deSolve’:
+
+    rk4
+
+make: Nothing to be done for 'all'.
+[1] ...10%
+[1] ...20%
+[1] ...30%
+[1] ...40%
+[1] ...50%
+[1] ...60%
+[1] ...70%
+[1] ...80%
+[1] ...90%
+[1] ...100%
+[1]  
+[1] N=1.0e+06
+[1] fracBurnIn=0.00
+[1] thin=100
+[1] K=20
+[1]  
+[1] ** mean(rho)=6.429312e+08
+[1] ** var(rho)=1.695803e+13
+[1] ** std(rho)=4.118013e+06
+     2.5%       50%     97.5% 
+642099860 642877158 643648363 
+[1]  
+[1] ** mean(muK)=7.660856e-10
+[1] ** var(muK)=4.942012e-24
+[1] ** std(muK)=2.223064e-12
+        2.5%          50%        97.5% 
+7.617005e-10 7.660946e-10 7.704287e-10 
+[1]  
+[1] MCMC Done!
+Time difference of 6.858896 hours
+[1]  Export done.

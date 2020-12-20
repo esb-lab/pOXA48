@@ -1,0 +1,46 @@
+[1] Output Directory:  ../runs/strains/C201_uniform_nclones5_TC/
+[1] Input Data file:  ../../../data/ODdata_strains/ODdata_C201_TC.csv
+[1] Number of iterations:  1e+07
+[1] Prior:  uniform
+[1] Number of clones:  5
+[1] *******************************
+
+Attaching package: ‘pracma’
+
+The following object is masked from ‘package:deSolve’:
+
+    rk4
+
+make: Nothing to be done for 'all'.
+[1] ...10%
+[1] ...20%
+[1] ...30%
+[1] ...40%
+[1] ...50%
+[1] ...60%
+[1] ...70%
+[1] ...80%
+[1] ...90%
+[1] ...100%
+[1]  
+[1] N=1.0e+07
+[1] fracBurnIn=0.20
+[1] thin=100
+[1] K=5
+[1]  
+[1] ** mean(rho)=9.760022e+08
+[1] ** var(rho)=9.398973e+11
+[1] ** std(rho)=9.694830e+05
+     2.5%       50%     97.5% 
+974100345 976002821 977902688 
+[1]  
+[1] ** mean(muK)=5.410186e-10
+[1] ** var(muK)=4.028422e-24
+[1] ** std(muK)=2.007093e-12
+        2.5%          50%        97.5% 
+5.370818e-10 5.410209e-10 5.449621e-10 
+[1]  
+[1] MCMC Done...
+Time difference of 9.229499 hours
+[1] image saved in  ../runs/strains/C201_uniform_nclones5_TC//MCMC.RData
+[1]  Export done.

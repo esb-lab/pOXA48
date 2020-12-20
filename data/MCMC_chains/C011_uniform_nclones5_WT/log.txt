@@ -1,0 +1,50 @@
+During startup - Warning message:
+Setting LC_CTYPE failed, using "C" 
+[1] Output Directory:  ../runs/strains/C011_uniform_nclones5_WT/
+[1] Input Data file:  ../../../data/ODdata_strains/ODdata_C011_WT.csv
+[1] Number of iterations:  1e+07
+[1] Prior:  uniform
+[1] Number of clones:  5
+[1] *******************************
+
+Attaching package: 'pracma'
+
+The following object is masked from 'package:deSolve':
+
+    rk4
+
+During startup - Warning message:
+Setting LC_CTYPE failed, using "C" 
+make: Nothing to be done for 'all'.
+[1] ...10%
+[1] ...20%
+[1] ...30%
+[1] ...40%
+[1] ...50%
+[1] ...60%
+[1] ...70%
+[1] ...80%
+[1] ...90%
+[1] ...100%
+[1]  
+[1] N=1.0e+07
+[1] fracBurnIn=0.20
+[1] thin=100
+[1] K=5
+[1]  
+[1] ** mean(rho)=6.427348e+08
+[1] ** var(rho)=1.656139e+12
+[1] ** std(rho)=1.286911e+06
+     2.5%       50%     97.5% 
+640213138 642731829 645269129 
+[1]  
+[1] ** mean(muK)=8.089809e-10
+[1] ** var(muK)=6.025350e-23
+[1] ** std(muK)=7.762313e-12
+        2.5%          50%        97.5% 
+7.938716e-10 8.089016e-10 8.243591e-10 
+[1]  
+[1] MCMC Done...
+Time difference of 1.240993 days
+[1] image saved in  ../runs/strains/C011_uniform_nclones5_WT//MCMC.RData
+[1]  Export done.
