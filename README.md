@@ -1,6 +1,6 @@
 # pOXA48
 
-This is the repository of scripts and data necessary to generate the figures in the main text and supplementary information of the article *"The distribution of plasmid fitness effects explains plasmid persistence in bacterial communities"*.  Experimental data for each strain in our collection can be found at *pOXA48/data/ODdata_strains/*.
+This is the repository of scripts and data necessary to generate the figures in the main text and supplementary information of the article *"Variability in plasmid fitness effects contributes to plasmid persistence in bacterial communities"*.  Experimental data for each strain in our collection can be found at *pOXA48/data/ODdata_strains/*.
 
 The following scripts can be found in *pOXA48/code/m-files/*:
 
