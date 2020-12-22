@@ -26,7 +26,7 @@ The following scripts can be found in *pOXA48/code/m-files/*:
 **Supp Figure 7:In silico competition experiments**
 * Plotting script: plotSuppFigure7.m
 
-**Supp Figure 8.  Comparison between in silico and experimental competition experiments**
+**Supplementary Figure 8.  Comparison between in silico and experimental competition experiments**
 * Plotting script: plotSuppFigure8.m
 
 **Supp Figure 9. Plasmid stability as a function of the conjugation rate and plasmid cost**
