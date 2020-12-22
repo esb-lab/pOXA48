@@ -1,0 +1,57 @@
+
+#!/bin/bash
+
+
+declare -a strains=(""K249" "K224" "C209" "C216" "C177" "C200" "C114" )
+
+
+declare -a priors=("uniform"  ) #
+declare -a nclones=("1") #
+declare -a types=("WT" "TC")
+
+num_strains=${#strains[@]}
+num_priors=${#priors[@]}
+num_clones=${#nclones[@]}
+num_types=${#types[@]}
+num_chains=3
+
+N=1e6
+
+for (( k=1; k<${num_clones}+1; k++ ));
+do
+
+
+	for (( i=1; i<${num_strains}+1; i++ ));
+	do
+		for (( j=1; j<${num_priors}+1; j++ ));
+		do
+  			for (( m=1; m<${num_types}+1; m++ ));
+			do
+
+				dirWT=../runs/strains_gr/${strains[$i-1]}_${priors[$j-1]}_nclones${nclones[$k-1]}_${types[$m-1]}/
+				#echo ${dirWT}
+				if [ -d ${dirWT} ] 
+				then
+    					echo "Done " $i " / " ${num_strains} " : " ${strains[$i-1]} " : " ${types[$m-1]} " : " ${priors[$j-1]} " : " ${nclones[$k-1] }
+				else
+                
+                
+                   
+                   mkdir ../runs/strains_gr/${strains[$i-1]}_${priors[$j-1]}_nclones${nclones[$k-1]}_${types[$m-1]}/
+                        
+                        
+                    for (( num_chain=1; num_chain<${num_chains}+1; num_chain++ ));
+			         do
+                     
+                        echo ${num_chain} " Running " $i " / " ${num_strains} " : " ${strains[$i-1]}  " : " ${types[$m-1]} " : " ${priors[$j-1]} " : " ${nclones[$k-1] }
+                        
+                        touch ../runs/strains_gr/${strains[$i-1]}_${priors[$j-1]}_nclones${nclones[$k-1]}_${types[$m-1]}/log_chain${num_chain}.txt
+
+                        Rscript runMCMC.R dataFile="../../../data/ODdata_strains/ODdata_${strains[$i-1]}_${types[$m-1]}.csv" runDir="../runs/strains_gr/${strains[$i-1]}_${priors[$j-1]}_nclones${nclones[$k-1]}_${types[$m-1]}/" w.prior=${priors[$i-1]} n.clones=${nclones[$k-1]}  N=${N} num_chain=${num_chain} fracBurnIn=0. > ../runs/strains_gr/${strains[$i-1]}_${priors[$j-1]}_nclones${nclones[$k-1]}_${types[$m-1]}/log_chain${num_chain}.txt 2>&1 &
+                    done
+				fi
+			done
+		done
+	done
+done
+
